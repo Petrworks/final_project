@@ -1,4 +1,8 @@
-@import "./fonts";
+@use "sass:math";
+@import "./functions";
 @import "./var";
 @import "./reset";
+@import "./fonts";
 @import  "./common";
+@import "./typography";
+@import "./sections"

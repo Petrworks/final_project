@@ -1,0 +1,17 @@
+.theme-dark {
+  background: $gragient-supersoft;
+  .txt-primary {
+    color: $c-white;
+  }
+}
+.theme-light {
+background-color: $c-white;
+.txt-primary {
+  color: $c-indigo;
+}
+}
+.section-gradient {
+  min-height: 100vh;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+}
