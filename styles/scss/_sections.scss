@@ -14,4 +14,22 @@ background-color: $c-white;
   min-height: 100vh;
   border-radius: 0 0 12px 12px;
   position: relative;
+  margin-bottom: 20px;
+&__shadow {
+  position: absolute;
+  height: 10px;
+  border-radius: 0 0 12px 12px;
+}
+&__shadow--1 {
+  bottom: -10px;
+  width: calc(100% - 40px);
+  left: 20px;
+  background: #cacadb;
+}
+&__shadow--2 {
+  bottom: -20px;
+  width: calc(100% - 80px);
+  left: 40px;
+  background: #e7e7f2;
+} 
 }
