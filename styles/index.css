@@ -145,6 +145,41 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container-lg {
+  max-width: 1630px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-xlg {
+  max-width: 1750px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 1390px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  font-size: calc(1rem * 1.2);
+  color: #f0145a;
+}
+
+img {
+  width: 100%;
+}
+
 .theme-dark {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
 }
@@ -181,4 +216,20 @@ html {
   width: calc(100% - 80px);
   left: 40px;
   background: #e7e7f2;
+}
+
+.main-wrap {
+  min-height: 100vh;
+  position: relative;
+}
+.main-wrap__bg {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.main-wrap__bg--object {
+  position: absolute;
+  height: 100%;
 }

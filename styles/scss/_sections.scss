@@ -33,3 +33,19 @@ background-color: $c-white;
   background: #e7e7f2;
 } 
 }
+.main-wrap {
+  min-height: 100vh;
+  position: relative;
+  &__bg  {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+    &--object  {
+    position: absolute;
+    height: 100%;
+    }
+  }
+}
+
