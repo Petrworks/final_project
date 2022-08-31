@@ -47,5 +47,49 @@ background-color: $c-white;
     height: 100%;
     }
   }
+  &__content {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
+.main-header {
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+  display: grid;
+  column-gap: 20px;
+  grid-template-areas: "logo info" "logo nav";
+  @media screen and (max-width: $md) {
+    grid-template-areas: "info" "logo" "nav";
+  }
+  &__logo,
+  &__info,
+  &__nav {
+    padding: 20px;
+  }
+  &__logo {
+    grid-area: logo;
+  }
+  &__info {
+    grid-area: info;
+  }
+  &__nav {
+    grid-area: nav;
+    display: flex;
+  }
+  }
+
+  &__info,
+  &__nav {
+    justify-self: start;
+    @media screen and (min-width: $md) {
+      justify-self: end;
+    }
+  }
+// .main-header__nav {
+//   display: flex;
+// }
 
