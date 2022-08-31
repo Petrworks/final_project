@@ -21,9 +21,12 @@ html {
 }
 a {
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 a:hover {
-  font-size: calc($txt-normal * 1.1);
+  // font-size: calc($txt-normal * 1.1);
   color: $c-accent;
+}
+.btn-circle:hover  {
+  color: #f0145a;
 }

@@ -37,14 +37,16 @@ background-color: $c-white;
   min-height: 100vh;
   position: relative;
   &__bg  {
-  min-height: 100%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-    &--object  {
     position: absolute;
-    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    &--object  {
+      position: absolute;
+      height: 100%;
     }
   }
   &__content {
@@ -64,8 +66,7 @@ background-color: $c-white;
     grid-template-areas: "info" "logo" "nav";
   }
   &__logo {
-    grid-area: logo;
-    
+    grid-area: logo; 
   }
   &__info {
     grid-area: info;
@@ -74,6 +75,7 @@ background-color: $c-white;
     gap: 7px;
     padding-top: 50px;
     padding-bottom: 16px;
+    align-items: center;
   }
   &__nav {
     grid-area: nav;
@@ -88,3 +90,54 @@ background-color: $c-white;
     }
   }
 }
+.main {
+  align-self: center;
+  font-weight: 700;
+  font-size: $h1;
+  line-height: 46px;
+  color: $c-white;
+  // padding-top: 200px;
+  // padding-bottom: 290px;
+}
+.btn-circle {
+  display: flex;
+  justify-content: center;
+}
+.section-slider {
+  margin-top: 60px;
+  display: flex;
+  gap: 124px;
+  align-items: center;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    &__title {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      color: $c-grey-600;
+    }
+  }
+  &__desc {
+    max-width: 861px;
+    min-height: 157px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__title {
+      font-weight: 700;
+      font-size: $h2;
+      line-height: 37px;
+      color: $c-white;
+    }
+      &__txt {
+        font-weight: 400;
+        font-size: $txt-exmd;
+        line-height: 30px;
+        color: $c-white;
+      }
+    }
+  }
+
