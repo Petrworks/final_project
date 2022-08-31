@@ -1,0 +1,27 @@
+.main-header__info {
+  color: $c-white;
+  &__lang {
+    font-weight: 700;
+    font-size: $txt-exsm;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  &__txt {
+    font-weight: 400;
+    font-size: $txt-normal;
+    line-height: 20px;
+  }
+  &__call {
+    font-weight: 700;
+    font-size: $txt-normal;
+    line-height: 20px;
+  }
+}
+.main-header__nav--link  {
+  color: $c-white;
+  font-weight: 700;
+  font-size: $txt-normal;
+  line-height: 20px;
+}

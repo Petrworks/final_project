@@ -141,6 +141,10 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -174,6 +178,35 @@ a {
 a:hover {
   font-size: calc(1rem * 1.2);
   color: #f0145a;
+}
+
+.main-header__info {
+  color: #ffffff;
+}
+.main-header__info__lang {
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main-header__info__txt {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+}
+.main-header__info__call {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.main-header__nav--link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
 }
 
 .theme-dark {
@@ -238,15 +271,13 @@ a:hover {
 }
 
 .main-header {
-  border: 1px solid white;
   padding: 5px;
-  color: white;
   display: grid;
   -moz-column-gap: 20px;
        column-gap: 20px;
   grid-template-areas: "logo info" "logo nav";
 }
-@media screen and (max-width: 768x) {
+@media screen and (max-width: 768px) {
   .main-header {
     grid-template-areas: "info" "logo" "nav";
   }
@@ -259,7 +290,18 @@ a:hover {
 }
 .main-header__info {
   grid-area: info;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 .main-header__nav {
   grid-area: nav;
+}
+.main-header__info, .main-header__nav {
+  justify-self: start;
+}
+@media screen and (min-width: 768px) {
+  .main-header__info, .main-header__nav {
+    justify-self: end;
+  }
 }

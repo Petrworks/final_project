@@ -56,9 +56,7 @@ background-color: $c-white;
   }
 }
 .main-header {
-  border: 1px solid white;
   padding: 5px;
-  color: white;
   display: grid;
   column-gap: 20px;
   grid-template-areas: "logo info" "logo nav";
@@ -75,13 +73,13 @@ background-color: $c-white;
   }
   &__info {
     grid-area: info;
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
   &__nav {
     grid-area: nav;
-    display: flex;
   }
-  }
-
   &__info,
   &__nav {
     justify-self: start;
@@ -89,7 +87,4 @@ background-color: $c-white;
       justify-self: end;
     }
   }
-// .main-header__nav {
-//   display: flex;
-// }
-
+}
