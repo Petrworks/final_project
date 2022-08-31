@@ -176,7 +176,7 @@ a {
 }
 
 a:hover {
-  font-size: calc(1rem * 1.2);
+  font-size: calc(1rem * 1.1);
   color: #f0145a;
 }
 
@@ -271,10 +271,9 @@ a:hover {
 }
 
 .main-header {
-  padding: 5px;
   display: grid;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  align-items: end;
+  padding: 0 60px;
   grid-template-areas: "logo info" "logo nav";
 }
 @media screen and (max-width: 768px) {
@@ -282,20 +281,21 @@ a:hover {
     grid-template-areas: "info" "logo" "nav";
   }
 }
-.main-header__logo, .main-header__info, .main-header__nav {
-  padding: 20px;
-}
 .main-header__logo {
   grid-area: logo;
 }
 .main-header__info {
   grid-area: info;
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 7px;
+  padding-top: 50px;
+  padding-bottom: 16px;
 }
 .main-header__nav {
   grid-area: nav;
+  display: flex;
+  gap: 15px;
 }
 .main-header__info, .main-header__nav {
   justify-self: start;

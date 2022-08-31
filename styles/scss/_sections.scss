@@ -56,29 +56,29 @@ background-color: $c-white;
   }
 }
 .main-header {
-  padding: 5px;
   display: grid;
-  column-gap: 20px;
+  align-items: end;
+  padding: 0 60px;
   grid-template-areas: "logo info" "logo nav";
   @media screen and (max-width: $md) {
     grid-template-areas: "info" "logo" "nav";
   }
-  &__logo,
-  &__info,
-  &__nav {
-    padding: 20px;
-  }
   &__logo {
     grid-area: logo;
+    
   }
   &__info {
     grid-area: info;
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 7px;
+    padding-top: 50px;
+    padding-bottom: 16px;
   }
   &__nav {
     grid-area: nav;
+    display: flex;
+    gap: 15px;
   }
   &__info,
   &__nav {
