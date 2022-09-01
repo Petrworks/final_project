@@ -150,22 +150,22 @@ html {
 }
 
 .container-lg {
-  max-width: 1630px;
-  padding: 0;
+  max-width: 1640px;
+  padding: 0 20px;
   width: 100%;
   margin: 0 auto;
 }
 
 .container-xlg {
-  max-width: 1750px;
-  padding: 0;
+  max-width: 1760px;
+  padding: 0 20px;
   width: 100%;
   margin: 0 auto;
 }
 
 .container-md {
-  max-width: 1390px;
-  padding: 0;
+  max-width: 1400px;
+  padding: 0 20px;
   width: 100%;
   margin: 0 auto;
 }
@@ -360,5 +360,56 @@ a:hover {
   font-weight: 400;
   font-size: 1.1875rem;
   line-height: 30px;
+  color: #ffffff;
+}
+
+.section-services {
+  margin-top: 60px;
+}
+.section-services--link {
+  display: block;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-services__title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 46px;
+  color: #f0145a;
+}
+.section-services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+.section-services__cards__card {
+  display: flex;
+  max-width: 440px;
+  flex-direction: column;
+}
+.section-services__cards__icon {
+  width: 92px;
+}
+.section-services__cards__title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 27px;
+  color: #24a3ff;
+  padding: 30px 0 15px 0;
+}
+.section-services__cards__txt {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.link-color {
   color: #ffffff;
 }

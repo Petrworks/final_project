@@ -140,4 +140,53 @@ background-color: $c-white;
       }
     }
   }
-
+.section-services {
+  margin-top: 60px;
+  &--link {
+    display: block;
+    font-weight: 700;
+    font-size: $h3-caps;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    // color: $c-white;
+    margin-bottom: 10px;
+  }
+  &__title {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: $h1;
+    line-height: 46px;
+    color: $c-accent;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    &__card {
+      display: flex;
+      max-width: 440px;
+      flex-direction: column;
+    }
+    &__icon {
+      width: 92px;
+    }
+    &__title {
+      font-weight: 700;
+      font-size: $h3;
+      line-height: 27px;
+      color: $c-blue-400;
+      padding: 30px 0 15px 0;
+    }
+    &__txt {
+      font-weight: 400;
+      font-size: $txt-normal;
+      line-height: 26px;
+      color: $c-white;
+    }
+  }
+}
+.link-color {
+  color: $c-white;
+}

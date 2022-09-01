@@ -3,19 +3,19 @@ html {
 }
 .container-lg {
   max-width: calc($container-lg + $container-padding-x*2);
-  padding: 0;
+  padding: 0 $container-padding-x;
   width: 100%;
   margin: 0 auto;
 }
 .container-xlg {
   max-width: calc($container-xlg + $container-padding-x*2);
-  padding: 0;
+  padding: 0 $container-padding-x;
   width: 100%;
   margin: 0 auto;
 }
 .container-md {
   max-width: calc($container-md + $container-padding-x*2);
-  padding: 0;
+  padding: 0 $container-padding-x;
   width: 100%;
   margin: 0 auto;
 }
