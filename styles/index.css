@@ -183,6 +183,10 @@ a:hover {
   color: #f0145a;
 }
 
+.baner {
+  display: flex;
+}
+
 .main-header__info {
   color: #ffffff;
 }
@@ -274,6 +278,9 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+.main-wrap__nav {
+  padding-bottom: 40px;
+}
 
 .main-header {
   display: grid;
@@ -318,6 +325,7 @@ a:hover {
   font-size: 2.375rem;
   line-height: 46px;
   color: #ffffff;
+  padding-bottom: 40px;
 }
 
 .btn-circle {
@@ -330,6 +338,7 @@ a:hover {
   display: flex;
   gap: 124px;
   align-items: center;
+  text-align: right;
 }
 .section-slider__list {
   display: flex;
@@ -383,10 +392,9 @@ a:hover {
   color: #f0145a;
 }
 .section-services__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  justify-content: center;
 }
 .section-services__cards__card {
   display: flex;
@@ -412,4 +420,26 @@ a:hover {
 
 .link-color {
   color: #ffffff;
+}
+
+.carousel-item {
+  max-width: 400px;
+}
+
+.grid-title {
+  display: block;
+  text-align: center;
+  padding: 60px 0 30px 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+
+.grid-logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 430px);
+  justify-content: center;
 }
