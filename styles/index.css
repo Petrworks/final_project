@@ -512,3 +512,64 @@ a:hover {
 .content-wrapper {
   max-width: 513.33px;
 }
+
+.footer {
+  background-color: #f5f5fa;
+  display: flex;
+  gap: 30px;
+}
+.footer--border {
+  margin-top: 30px;
+  max-width: 1600px;
+  border: 2px solid #e6e6f0;
+}
+.footer-main {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-main__info {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.footer-main__info__link {
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+}
+.footer-main__info__txt {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #323264;
+}
+.footer-main__contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-main__contacts__contact {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: right;
+  color: #46466e;
+}
+.footer-main__contacts__mail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+}
+
+.footer-main__left {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: right;
+  color: #b3b3ba;
+}
