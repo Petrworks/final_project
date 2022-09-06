@@ -336,21 +336,26 @@ a:hover {
 .section-slider {
   margin-top: 60px;
   display: flex;
-  gap: 124px;
+  gap: 60px;
   align-items: center;
-  text-align: right;
 }
 .section-slider__list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 30px;
+  text-align: right;
 }
 .section-slider__list__title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
   color: #b3b3ba;
+}
+.section-slider--border {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  transform: rotate(90deg);
 }
 .section-slider__desc {
   max-width: 861px;
