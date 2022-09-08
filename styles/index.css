@@ -384,6 +384,41 @@ a:hover {
   color: #ffffff;
 }
 
+.carousel-inner--img {
+  height: 298px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-inner--img {
+    width: 648px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .section-slider__desc {
+    max-width: 581px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-slider__desc {
+    max-width: 405px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-slider {
+    flex-direction: column;
+  }
+  .section-slider__list {
+    overflow-x: hidden;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 60px;
+  }
+  .section-slider__desc {
+    max-width: 648px;
+  }
+}
 .section-services {
   margin-top: 60px;
 }
@@ -407,6 +442,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
+  padding-bottom: 60px;
 }
 .section-services__cards__card {
   display: flex;
@@ -430,11 +466,17 @@ a:hover {
   color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+  .section-services__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .link-color {
   color: #24a3ff;
 }
 
 .carousel-inner {
+  display: flex;
   background-color: #f5f5fa;
   margin-top: 60px;
 }
@@ -443,7 +485,7 @@ a:hover {
 }
 .carousel-inner__subject__txt {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 46px;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
@@ -453,22 +495,24 @@ a:hover {
 .carousel-inner__subject__author {
   padding-top: 30px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   color: #b3b3ba;
 }
 .carousel-inner__subject__sign {
-  padding-top: 8px;
+  padding: 8px 0 30px 0;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   color: #b3b3ba;
 }
 
-.carousel-inner {
-  display: flex;
+@media screen and (max-width: 1024px) {
+  .carousel-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
-
 .info-link {
   font-weight: 700;
   font-size: 14px;
@@ -480,7 +524,6 @@ a:hover {
 
 .grid-title {
   display: block;
-  text-align: center;
   padding: 60px 0 30px 0;
   font-weight: 700;
   font-size: 0.875rem;
@@ -534,6 +577,11 @@ a:hover {
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .aside {
+    text-align: center;
+  }
+}
 .aside-content__column {
   display: flex;
   flex-direction: column;
