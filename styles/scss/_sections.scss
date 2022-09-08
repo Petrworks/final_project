@@ -165,7 +165,6 @@
     line-height: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    // color: $c-white;
     margin-bottom: 10px;
   }
   &__title {
@@ -206,8 +205,47 @@
 .link-color {
   color: $c-blue-400;
 }
-.carousel-item {
-  max-width: 400px;
+
+.carousel-inner {
+  background-color: $c-grey-300;
+  margin-top: 60px;
+  &__subject {
+    padding: 30px 0 0 30px;
+    &__txt {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    &__author {
+      padding-top: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: $c-grey-600;
+    }
+    &__sign {
+      padding-top: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $c-grey-600;
+    }
+  }
+}
+.carousel-inner {
+  display: flex;
+}
+.info-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $c-blue-400;
 }
 .grid-title {
   display: block;
@@ -224,11 +262,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 430px);
   justify-content: center;
+  &__img {
+    max-width: 430px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .grid-logo {
-  grid-template-columns: repeat(4, 360px);
+  grid-template-columns: repeat(auto-fill, 360px);
   }
+  
 }
 .aside {
   margin-top: 60px;
