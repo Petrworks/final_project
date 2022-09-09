@@ -42,14 +42,14 @@
 }
 .main-section {
   border-top: 4px solid  rgba(255, 255, 255, 0.5);
-  margin-top: 60px;
+  margin: 60px 0;
   &__title {
     display: block;
     font-weight: 700;
     font-size: $txt-mdl;
     line-height: 27px;
     color: $c-white; 
-    padding-top: 30px;
+    padding: 30px 0;
   }
   &__content {
     display: flex;
@@ -60,4 +60,14 @@
     line-height: 26px;
     color: $c-white;
   }
+}
+.main-section__wrapper {
+  display: flex;
+  gap: 60px;
+}
+.main-section__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 650px;
 }
