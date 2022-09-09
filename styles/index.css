@@ -471,6 +471,11 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 576px) {
+  .section-services__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .link-color {
   color: #24a3ff;
 }
@@ -531,6 +536,7 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #323264;
+  text-align: center;
 }
 
 .grid-logo {
@@ -559,6 +565,7 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24a3ff;
+  text-align: left;
 }
 .aside-title {
   padding-bottom: 30px;
@@ -566,6 +573,7 @@ a:hover {
   font-size: 38px;
   line-height: 46px;
   color: transparent;
+  text-align: left;
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
@@ -680,4 +688,24 @@ a:hover {
   line-height: 20px;
   text-align: right;
   color: #b3b3ba;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-main {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-main__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-main__contacts {
+    flex-direction: column;
+  }
+  .footer-main__left {
+    padding: 30px 0 20px 0;
+  }
+  .separator {
+    display: none;
+  }
 }
