@@ -717,6 +717,7 @@ a:hover {
 }
 
 .main-subject {
+  padding-top: 60px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -781,4 +782,25 @@ a:hover {
   flex-direction: column;
   gap: 15px;
   max-width: 650px;
+}
+
+@media screen and (max-width: 576px) {
+  .main-section__wrapper.services {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-main.services {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-main__info.services {
+  padding-bottom: 21px;
+  align-items: center;
+}
+
+.footer-main__contacts.services {
+  padding-bottom: 30px;
 }
