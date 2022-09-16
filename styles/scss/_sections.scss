@@ -134,6 +134,7 @@
       font-size: 38px;
       line-height: 46px;
       color: $c-grey-600;
+      white-space: nowrap;
     }
   }
   &__desc {
@@ -157,7 +158,9 @@
   }
 }
 .carousel-inner--img  {
-height: 298px;
+  max-width: 400px;
+  /* width: 100%; */
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .carousel-inner--img {
@@ -180,11 +183,12 @@ height: 298px;
   .section-slider {
   flex-direction: column;
   &__list {
-    overflow-x: hidden;
+    overflow-y: hidden;
     flex-direction: row;
     border-right: none;
     border-bottom: 4px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 60px;
+  
     }
     &__desc {
       max-width: 648px;
@@ -472,3 +476,4 @@ padding-bottom: 30px;
     display: none;
     }
   }
+ 

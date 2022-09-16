@@ -145,6 +145,10 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container-lg {
   max-width: 1640px;
   padding: 0 20px;
@@ -359,6 +363,7 @@ a:hover {
   font-size: 38px;
   line-height: 46px;
   color: #b3b3ba;
+  white-space: nowrap;
 }
 .section-slider__desc {
   max-width: 861px;
@@ -381,7 +386,10 @@ a:hover {
 }
 
 .carousel-inner--img {
-  height: 298px;
+  max-width: 400px;
+  /* width: 100%; */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -405,7 +413,7 @@ a:hover {
     flex-direction: column;
   }
   .section-slider__list {
-    overflow-x: hidden;
+    overflow-y: hidden;
     flex-direction: row;
     border-right: none;
     border-bottom: 4px solid rgba(255, 255, 255, 0.3);

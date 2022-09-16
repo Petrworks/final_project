@@ -1,6 +1,9 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+img {
+  max-width: 100%;
+}
 .container-lg {
   max-width: calc($container-lg + $container-padding-x*2);
   padding: 0 $container-padding-x;
