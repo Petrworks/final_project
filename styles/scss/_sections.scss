@@ -311,8 +311,8 @@
   text-align: center;
 }
 .grid-logo {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 430px);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   &__img {
     max-width: 430px;
